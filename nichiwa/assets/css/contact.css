@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* topicArea　sp */
+.topicArea {
+    position: relative;
+    text-align: center;
+}
+
+.topic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.012rem;
+    z-index: 1;
+  }
+
+.topicBackground {
+    width: 100%;
+    height: 104px;
+    display: block;
+  }
+
+/* topicArea pc */
+@media screen and (min-width:769px){
+    .topic {
+        font-size: 6.4rem;
+        letter-spacing: 0.032rem;
+      }
+
+    .topicBackground {
+        height: 216px;
+    }
+}/* 769px pc */
+
+/* sp */
+
+#formWrap {
+	width: 95%;
+	margin:0 auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+
+.form {
+    color: #555;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.08rem;
+    margin-top: 64px;
+    margin-bottom: 18px;
+}
+
+.form_detail {
+    color: #555;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 17px;
+}
+
+table.formTable{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable td,table.formTable th{
+	border:1px solid #ccc;
+	padding:10px;
+    width: auto;
+    display: block;
+}
+
+table.formTable td {
+    text-align: left;
+}
+
+table.formTable th{
+	font-weight:normal;
+	background:#efefef;
+	text-align:left;
+}
+
+.c-form-select {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.c-form-select:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    bottom: 9%;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    transform: rotate(135deg);
+    pointer-events: none;
+}
+
+.c-form-select select {
+    width: 100%;
+    height: 2.4em;
+    padding: 0 8px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #4F4F4F inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.c-form-select select::-ms-expand {
+    display: none;
+}
+
+.c-form-select select:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #FF9914 inset;
+}
+
+.c-form-textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 4px 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #4F4F4F inset;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    resize: vertical;
+}
+
+.c-form-textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #FF9914 inset;
+}
+
+.c-form-radio{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.c-form-radio input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.c-form-radio-name {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: #4F4F4F;
+}
+
+.c-form-radio-name:before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid #4F4F4F;
+    border-radius: 50%;
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+
+.c-form-radio input:checked + .c-form-radio-name:before {
+    border: 0.35em solid #FF9914;
+}
+
+.c-form-radio input:focus-visible + .c-form-radio-name .c-form-radio-text {
+    background: linear-gradient(transparent 90%, rgba(0, 156, 218, 0.3) 90%);
+}
+
+.c-form-submit-button-list {
+	display: flex;
+    justify-content: center;
+    padding: 15px 0 14px;
+}
+
+.c-form-submit-button {
+	display: block;
+    background-color: #FF9914;
+    color: #fff;
+    font-weight: 400;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 6px 10px;
+	line-height: 1;
+}
+
+.c-form-submit-button:hover {
+    transform: translateY(-5px);
+}
+
+.c-form-annotation {
+    color: #555;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 85px;
+}
+
+/* 　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　 */
+@media screen and (min-width: 769px) {
+#formWrap {
+	width: 700px;
+	margin:0 auto;
+}
+
+table.formTable th {
+	margin-top:0;
+	border-bottom:0;
+}
+form input[type="text"], form textarea {
+	width:80%;
+	padding:5px;
+	font-size: 1.8rem;
+}
+
+  }

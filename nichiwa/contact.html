@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="assets/css/destyle.css">
+<link rel="stylesheet" href="assets/css/destyle.min.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/contact.css">
+<title>お問い合わせ｜日和｜宮崎市で安心して暮らせる物件にする</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="headerTopic"><a href="index.html"><img src="assets/images/nichiwa-logo-header.png" alt="日和のロゴ" class="logo"></a></h1>
+    <nav class="nav">
+        <div class="nav__header">
+            <a class="navTopic__sp" href="#"><img src="assets/images/nichiwa-logo-header.png" alt="日和のロゴ" class="logo"></a>
+            <img class="nav__btn" src="assets/images/btn-close.svg" alt="閉じるためのボタン">
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">トップ</a></li>
+            <li class="nav__item"><a href="company.html">企業情報</a></li>
+            <li class="nav__item"><a href="property.html">物件情報</a></li>
+            <li class="nav__item"><a href="charm.html">物件の周囲の魅力</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__contactBtn">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <!-- header__btn -->
+    <img class="header__btn" src="assets/images/btn-menu.svg" alt="ハンバーガーメニュー">
+</header>
+<main class="main">
+  <article class="article">
+<div class="topicArea">
+  <h2 class="topic">お問い合わせ</h2>
+  <img class="topicBackground" srcset="assets/images/contact-header-sp.jpg 375w, assets/images/contact-header-pc.jpg 1440w" sizes="(max-width: 375px) 375px,1440px" src="assets/images/contact-header-pc.jpg" alt="パソコンのキーボードが写っている写真">
+</div>
+<div id="formWrap">
+  <h3 class="form">お問い合わせフォーム</h3>
+  <p class="form_detail">下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
+  <form method="post" action="assets/php/mail.php">
+    <table class="formTable">
+      <tr class="c-form-select">
+        <th>ご用件</th>
+        <td><select name="ご用件">
+            <option value="">選択してください</option>
+            <option value="駐車場の賃貸について">駐車場の賃貸について</option>
+            <option value="マンション・貸家の賃貸について">マンション・貸家の賃貸について</option>
+            <option value="賃貸物件の管理について">賃貸物件の管理について</option>
+            <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+          </select></td>
+      </tr>
+      <tr>
+        <th>お名前</th>
+        <td><input size="20" type="text" name="お名前" class="c-form-textarea"/> ※必須</td>
+      </tr>
+      <tr>
+        <th>電話番号（半角）</th>
+        <td><input size="30" type="text" name="電話番号" class="c-form-textarea"/></td>
+      </tr>
+      <tr>
+        <th>メールアドレス（半角）</th>
+        <td><input size="30" type="text" name="Email" class="c-form-textarea"/> ※必須</td>
+      </tr>
+      <tr>
+        <th>性別</th>
+        <td>
+          <div class="c-form-radio">
+            <label>
+                <input type="radio" name="gender" value="1" />
+                <span class="c-form-radio-name">
+                    <span class="c-form-radio-text">男</span>
+                </span>
+            </label>
+        
+            <label>
+                <input type="radio" name="gender" value="2" />
+                <span class="c-form-radio-name">
+                    <span class="c-form-radio-text">女</span>
+                </span>
+            </label>
+        </div>
+          </td>
+      </tr>
+      <tr>
+        <th>ご連絡方法</th>
+        <td>
+          <div class="c-form-radio">
+            <label>
+              <input type="radio" name="contact_method" value="1" />
+              <span class="c-form-radio-name">
+                <span class="c-form-radio-text">メール</span>
+              </span>
+            </label>
+            
+            <label>
+              <input type="radio" name="contact_method" value="2" />
+              <span class="c-form-radio-name">
+                <span class="c-form-radio-text">電話</span>
+              </span>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>お問い合わせ内容<br /></th>
+        <td><textarea name="お問い合わせ内容" class="c-form-textarea" cols="50" rows="5"></textarea></td>
+      </tr>
+    </table>
+    <div class="c-form-submit-button-list">
+      <!-- <p align="center"> -->
+        <input type="submit" value="　 確認 　" class="c-form-submit-button"/>　<input type="reset" value="リセット" class="c-form-submit-button"/>
+      <!-- </p> -->
+    </div>
+  </form>
+  <p class="c-form-annotation">※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください</p>
+</div>
+<section class="section section--contact">
+                    <div class="contact__content">
+                        <h2 class="contact__topic fade-in">CONTACT</h2>
+                        <p class="contact__txt fade-in">賃貸物件に関するご質問承ります。</p>
+                    </div>
+                    <a class="contact__btn" href="contact.html">フォームでのお問い合わせ</a>
+                </section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer__group">
+  <div class="footer__content">
+      <h2 class="footerTopic__logo"><a href="index.html"><img src="assets/images/nichiwa-logo-footer.png" alt="日和のロゴ"></a></h2>
+      <ul class="footer__navi">
+          <li><a href="#">トップ</a></li>
+          <li><a href="company.html">企業情報</a></li>
+          <li><a href="property.html">物件情報</a></li>
+          <li><a href="charm.html">物件の周囲の魅力</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+  </div>
+  <div class="footer__copy">
+      <p class="copy"><small>Copyright&copy;2025 NICHIWA Inc.</small></p>
+  </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

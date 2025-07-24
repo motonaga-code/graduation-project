@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* topicArea　sp */
+.topicArea {
+    position: relative;
+    text-align: center;
+}
+
+.topic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.012rem;
+    z-index: 1;
+  }
+
+.topicBackground {
+    width: 100%;
+    height: 104px;
+    display: block;
+  }
+
+/* topicArea pc */
+@media screen and (min-width:769px){
+    .topic {
+        font-size: 6.4rem;
+        letter-spacing: 0.032rem;
+      }
+
+    .topicBackground {
+        height: 216px;
+    }
+}/* 769px pc */
+
+/* property sp */
+.section.section--property {
+    margin: 72px 5% 64px;
+}
+
+.property__map {
+    padding-top: 24px;
+    width: 100%;
+    height: 192px;
+}
+
+.property__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.property__name::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/location.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 16px;
+  }
+
+.property__floor {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+}
+
+.pagination {
+    padding-top: 25px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-button-prev {
+    display: block;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/paginationprevious-sp.svg");
+    background-size: 9px 9px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF9914;
+    line-height: 1;
+}
+
+.pagination-button-prev:hover {
+    transform: translateY(-5px);
+}
+
+.pagination__item {
+    display: block;
+    padding: 6px 9px;
+    color: #FFF;
+    background-color: #FF9914;
+    width: 26px;
+    height: 26px;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+}
+
+.pagination-button-next {
+    display: block;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/paginationnext-sp.svg");
+    background-size: 9px 9px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF9914;
+    line-height: 1;
+}
+
+.pagination-button-next:hover {
+    transform: translateY(-5px);
+}
+
+.pagination__item:hover {
+    transform: translateY(-5px);
+}
+
+.pagination__item:nth-of-type(4) {
+    padding: 6px 7px;
+}
+
+/* property　pc */
+@media screen and (min-width:769px) {
+    .section.section--property {
+        padding-top: 0px;
+        margin: 120px 10% 96px;
+    }
+
+    .property__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        list-style: none;
+        padding: 0;
+        margin-top: 56px;
+        row-gap: 72px; 
+    }
+
+    .property__map {
+        padding-top: 0;
+        height: 192px;
+    }
+
+    .property__name {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.008rem;
+        padding-top: 16px;
+    }
+
+    .property__floor {
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-top: 16px;
+        letter-spacing: 0.008rem;
+    }
+
+    .pagination {
+        padding-top: 51px;
+        gap: 16px;
+    }
+
+    .pagination-button-prev {
+    display: block;
+    content: '';
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/paginationprevious-sp.svg");
+    background-size: 14px 14px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF9914;
+    line-height: 1;
+}
+
+    .pagination__item {
+        padding: 12px 19px;
+        line-height: 1.5;
+        width: 48px;
+        height: 48px;
+        font-size: 1.6rem;
+    }
+
+    .pagination-button-next {
+    display: block;
+    content: '';
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/paginationnext-sp.svg");
+    background-size: 14px 14px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF9914;
+    line-height: 1;
+}
+
+    .pagination__item:nth-of-type(4) {
+        padding: 12px 17px;
+    }
+
+}/* 769px pc */
+
+/* area sp */
+.section.section--area {
+    margin: 64px 5%;
+    position: relative;
+}
+
+.area__item {
+    padding-top: 16px;
+}
+
+.area__item:nth-of-type(1) {
+    padding-top: 27px;
+}
+
+.area__name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+}
+
+.area__txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+}
+
+.area__treat {
+    position: absolute;
+    top: 260px;
+    right: 0;
+}
+
+.area__wave {
+    position: absolute;
+    right: 0;
+    top: 784px;
+}
+
+/* area pc */
+@media screen and (min-width: 769px){
+    .section.section--area {
+        margin: 0 10% 77px;
+    }
+
+    .area__item {
+        display: flex;
+        padding-top: 56px;
+        gap: 96px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .areaImg {
+        z-index: 2;
+    }
+    
+    .area__item:nth-of-type(1) {
+        padding-top: 56px;
+    }
+
+    .area__item:nth-of-type(2) {
+        flex-direction: row-reverse;
+        padding-top: 75px;
+    }
+
+    .area__name {
+        font-size: 3.2rem;
+        letter-spacing: 0.016rem;
+        padding-top: 0;
+    }
+
+    .area__txt {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.008rem; 
+        padding-top: 24px;
+    }
+
+    .area__treat {
+        top: 184px;
+        left: 342px;
+        z-index: 1;
+    }
+
+    .area__wave {
+        right: 340px;
+        top: 459px;
+    }
+}

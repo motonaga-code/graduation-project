@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* topicArea　sp */
+.topicArea {
+    position: relative;
+    text-align: center;
+}
+
+.topic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.012rem;
+    z-index: 1;
+  }
+
+.topicBackground {
+    width: 100%;
+    height: 104px;
+    display: block;
+  }
+
+/* topicArea pc */
+@media screen and (min-width:769px){
+    .topic {
+        font-size: 6.4rem;
+        letter-spacing: 0.032rem;
+      }
+
+    .topicBackground {
+        height: 216px;
+    }
+}/* 769px pc */
+
+/* philosophy sp */
+.section.section--philosophy {
+    margin: 72px 5% 64px;
+}
+
+.philosophy__content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 24px;
+}
+
+.philosophy__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 24px;
+}
+
+.philosophy__txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+    max-width: 337px;
+}
+
+/* philosophy pc */
+@media screen and (min-width:769px) {
+    .section.section--philosophy {
+        margin: 120px 10% 96px;
+    }
+
+    .philosophy__content {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .philosophy__title {
+        font-size: 3.2rem;
+        padding-top: 56px;
+    }
+    
+    .philosophy__txt {
+        font-size: 1.6rem;
+        letter-spacing: 0.008rem;
+        padding-top: 24px;
+        max-width: 610px;
+    }
+
+    .philosophy__img {
+        padding-left: 183px;
+    }
+}/* 769px pc*/
+
+/* representative sp */
+.section.section--representative {
+    margin: 64px 5%;
+}
+
+.representative__content {
+    padding-top: 24px;
+    position: relative;
+}
+
+.representative__txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2;
+    letter-spacing: 0.05rem;
+    padding-top: 342px;
+}
+
+.representative__garden {
+    position: absolute;
+    top: 214px;
+    z-index: 2;
+}
+
+.representative__smartphone {
+    position: absolute;
+    right: 86px;
+    z-index: 1;
+}
+
+/* representative pc */
+@media screen and (min-width:769px) {
+    .section.section--representative {
+        margin: 0 10% 96px;
+    }
+    
+    .representative__content {
+        padding-top: 72px;
+        display: flex;
+    }
+
+    .representative__garden {
+        position: absolute;
+        top: 372px;
+        left: 0;
+        z-index: 2;
+    }
+
+    .representative__smartphone {
+        position: absolute;
+        left: 111px;
+        z-index: 1;
+    }
+
+    .representative__txt {
+        font-size: 1.6rem;
+        padding-top: 0;
+        padding-left: 502px;
+    }
+}/* 769px pc */
+
+/* companyprofile sp */
+.section.section--companyprofile {
+    margin: 64px 5%;
+}
+
+.companyprofile__list {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.companyprofile__item:nth-of-type(1) {
+    padding-top: 52px;
+}
+
+.companyprofile__item {
+    border-bottom: 1px solid #73C5E5;
+    padding: 20px 0;
+}
+
+.companyprofile__category {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    flex-shrink: 0;
+}
+
+.companyprofile__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    flex: 1;
+    padding-top: 12px;
+}
+
+/* companyprofile pc */
+@media screen and (min-width:769px){
+    .section.section--companyprofile {
+        margin: 0 10% 120px;
+    }
+    
+    .companyprofile__item:nth-of-type(1) {
+        padding-top: 72px;
+    }
+
+    .companyprofile__item {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #73C5E5;
+        padding: 32px 0;
+        gap: 152px;
+    }
+    
+    .companyprofile__category {
+        font-size: 1.6rem;
+        /* margin-right: 152px; */
+        min-width: 120px;
+    }
+    
+    .companyprofile__name {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        flex: 1;
+        padding: 0;
+    }
+}/* 769px pc */

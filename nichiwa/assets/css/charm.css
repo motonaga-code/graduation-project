@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* topicArea　sp */
+.topicArea {
+    position: relative;
+    text-align: center;
+}
+
+.topic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.012rem;
+    z-index: 1;
+    width: 193px;
+  }
+
+.topicBackground {
+    width: 100%;
+    height: 104px;
+    display: block;
+  }
+
+/* topicArea pc */
+@media screen and (min-width:769px){
+    .topic {
+        font-size: 6.4rem;
+        letter-spacing: 0.032rem;
+        width: 515px;
+      }
+
+    .topicBackground {
+        height: 216px;
+    }
+}/* 769px pc */
+
+/* sightseeing sp */
+.section--sightseeing {
+    margin: 72px 5% 64px;
+}
+
+.sightseeing__item {
+    padding-top: 24px;
+}
+
+.sightseeing__txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+}
+
+/* sightseeing pc */
+@media screen and (min-width:769px) {
+    
+    .section--sightseeing {
+        margin: 56px 10% 96px;
+    }
+
+    .sightseeing__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding-top: 56px;
+        list-style: none;
+    }
+
+    .sightseeing__item {
+        padding-top: 0;
+    }
+
+    .sightseeing__txt {
+        font-size: 1.6rem;
+        letter-spacing: 0.008rem;
+        padding-top: 24px;
+    }
+}
+
+/* neighborhood sp */
+.section--neighborhood {
+    margin: 0 5% 64px;
+    position: relative;
+}
+
+.neighborhood__item {
+    padding-top: 16px;
+}
+
+.neighborhood__item:nth-of-type(1) {
+    padding-top: 24px;
+}
+
+.neighborhood__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.neighborhood__txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.neighborhood__treat1 {
+    position: absolute;
+    top: 288px;
+    right: 0;
+    z-index: 1;
+}
+
+.neighborhood__treat2 {
+    position: absolute;
+    top: 768px;
+    left: 0;
+    z-index: 1;
+}
+
+.neighborhood__treat3 {
+    position: absolute;
+    top: 1246px;
+    right: 0;
+    z-index: 1;
+}
+
+/* neighborhood pc */
+@media screen and (min-width:769px) {
+    
+    .section--neighborhood {
+        margin: 0 10% 56px;
+    }
+
+    .neighborhood__item {
+        padding-top: 56px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .neighborhood__item:nth-of-type(2) {
+        flex-direction: row;
+    }
+
+    .neighborhood__title {
+        font-size: 3.2rem;
+        letter-spacing: 0.016rem;
+        padding-top: 0;
+    }
+
+    .neighborhood__txt {
+        font-size: 1.6rem;
+        letter-spacing: 0.008rem;
+    }
+
+    .neighborhood__treat1 {
+        top: 90px;
+        right: 0;
+        left: 10px;
+    }
+
+    .neighborhood__treat2 {
+        top: 438px;
+        left: 592px;
+    }
+
+    .neighborhood__treat3 {
+        top: 786px;
+        right: 879px;
+    }
+}
+
+/* gourmet sp */
+.section--gourmet {
+    margin: 0 5% 61px;
+}
+
+.gourmet__item {
+    padding-top: 24px;
+}
+
+.gourmet__title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+}
+
+.gourmet__txt {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.007rem;
+    padding-top: 16px;
+}
+
+.gourmet__address {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: 16px;
+}
+
+.gourmet__address::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/location.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* gourmet pc */
+@media screen and (min-width:769px) {
+    .section--gourmet {
+        margin: 0 10% 80px;
+    }
+
+    .gourmet__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        padding-top: 56px;
+        list-style: none;
+    }
+
+    .gourmet__title {
+        font-size: 1.6rem;
+        line-height: 2;
+        letter-spacing: 0.008rem;
+        padding-top: 24px;
+    }
+
+    .gourmet__txt {
+        font-size: 1.6rem;
+        line-height: 2;
+        letter-spacing: 0.008rem;
+        padding-top: 8px;
+    }
+
+    .gourmet__address {
+        font-size: 1.6rem;
+        letter-spacing: 0.008rem;
+        padding-top: 8px;
+    }
+}
